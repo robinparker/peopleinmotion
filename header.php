@@ -26,7 +26,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'peopleinmotion' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding container">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -39,10 +39,7 @@
 				<?php
 			endif;
 			$peopleinmotion_description = get_bloginfo( 'description', 'display' );
-			if ( $peopleinmotion_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $peopleinmotion_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
