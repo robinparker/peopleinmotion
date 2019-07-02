@@ -34,7 +34,11 @@
 			?>
 
 			<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'peopleinmotion' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="menu toggle">
+					<span aria-hidden="true" class="bar1"></span>
+					<span aria-hidden="true" class="bar2"></span>
+					<span aria-hidden="true" class="bar3"></span>
+				</button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',

@@ -28,7 +28,13 @@ get_header();
 		?>
 
 		<section class="intro-text blue-block">
-			<p>isdfi</p>
+			<div class="container">
+				<div class="row">
+					<div class="six columns offset-by-three">
+					<?php the_field('intro_text'); ?>
+				</div>
+				</div>
+		</div>
 		</section>
 
 		</main><!-- #main -->
