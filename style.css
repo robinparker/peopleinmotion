@@ -639,12 +639,14 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
+	/* background: rgba(255, 255, 255, 1);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
   top: 100%;
   left: -999em;
   z-index: 99999;
+	padding-top: 1rem; */
 }
 
 .main-navigation ul ul ul {
@@ -658,7 +660,9 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul a {
+	font-size: 1rem;
   width: 200px;
+	padding: 0 1rem;
 }
 
 .main-navigation ul li:hover>ul,
@@ -700,6 +704,17 @@ a:hover, a:active {
     float: left;
     position: relative;
   }
+
+	.main-navigation ul ul {
+		background: rgba(255, 255, 255, 1);
+	  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	  float: left;
+	  position: absolute;
+	  top: 100%;
+	  left: -999em;
+	  z-index: 99999;
+		padding-top: 1rem;
+	}
 }
 
 button.menu-toggle {
@@ -1034,11 +1049,13 @@ object {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
+	display: none;
 }
 
 @media screen and (min-width: 37.5em) {
   .hero {
     margin-top: -120px;
+		display: block;
   }
 }
 
@@ -1047,7 +1064,7 @@ object {
 --------------------------------------------------------------*/
 .site-header {
 	height: 90px;
-	background: rgba(255, 255, 255, .6);
+	background: rgba(255, 255, 255, 1);
 }
 
 .site-header .logo {

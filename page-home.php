@@ -15,26 +15,43 @@
 get_header();
 ?>
 
-<div class="hero"style="background-image:url('<?php the_field('hero_image'); ?>')"></div>
+<div class="hero" style="background-image:url('<?php the_field('hero_image'); ?>')"></div>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php
-		// while ( have_posts() ) :
-		// 	the_post();
-		// 	get_template_part( 'template-parts/content', 'page' );
-		// endwhile;
-		?>
-
 		<section class="intro-text blue-block">
 			<div class="container">
+					<div class="row">
+						<div class="six columns offset-by-three">
+							<?php the_field('intro_text'); ?>
+						</div>
+					</div>
+			</div>
+		</section>
+
+		<section class="get-involved">
+			<div class="container">
 				<div class="row">
-					<div class="six columns offset-by-three">
-					<?php the_field('intro_text'); ?>
+					<div class="six columns">
+						<h2>Get involved</h2>
+					</div>
 				</div>
-				</div>
-		</div>
+					<div class="row">
+						<div class="three columns">
+							<?php the_field('intro_text'); ?>
+						</div>
+						<div class="three columns">
+							<?php the_field('intro_text'); ?>
+						</div>
+						<div class="three columns">
+							<?php the_field('intro_text'); ?>
+						</div>
+						<div class="three columns">
+							<?php the_field('intro_text'); ?>
+						</div>
+					</div>
+			</div>
 		</section>
 
 		</main><!-- #main -->
