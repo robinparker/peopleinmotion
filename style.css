@@ -639,7 +639,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul {
-	/* background: rgba(255, 255, 255, 1);
+  /* background: rgba(255, 255, 255, 1);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
   position: absolute;
@@ -660,9 +660,9 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul a {
-	font-size: 1rem;
+  font-size: 1rem;
   width: 200px;
-	padding: 0 1rem;
+  padding: 0 1rem;
 }
 
 .main-navigation ul li:hover>ul,
@@ -705,16 +705,16 @@ a:hover, a:active {
     position: relative;
   }
 
-	.main-navigation ul ul {
-		background: rgba(255, 255, 255, 1);
-	  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	  float: left;
-	  position: absolute;
-	  top: 100%;
-	  left: -999em;
-	  z-index: 99999;
-		padding-top: 1rem;
-	}
+  .main-navigation ul ul {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+    padding-top: 1rem;
+  }
 }
 
 button.menu-toggle {
@@ -1041,6 +1041,30 @@ object {
 /*--------------------------------------------------------------
 ## CUSTOM
 --------------------------------------------------------------*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+}
+
 .hero {
   position: relative;
   z-index: -1;
@@ -1049,13 +1073,13 @@ object {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-	display: none;
+  display: none;
 }
 
 @media screen and (min-width: 37.5em) {
   .hero {
     margin-top: -120px;
-		display: block;
+    display: block;
   }
 }
 
@@ -1063,8 +1087,8 @@ object {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-	height: 90px;
-	background: rgba(255, 255, 255, 1);
+  height: 90px;
+  background: rgba(255, 255, 255, 1);
 }
 
 .site-header .logo {
@@ -1086,18 +1110,39 @@ object {
   padding: 3rem 0;
 }
 
+.gi-block {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.gi-block a {
+  text-decoration: none;
+}
+
+.gi-block a h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #06A5A7;
+  margin: .5rem 1rem 1rem 1rem;
+  height: 3.5rem;
+}
+
+.gi-block a p {
+  margin: 1rem;
+  color: #333;
+}
+
 .site-main.container {
   border-top: 5px solid #06A5A7;
   border-bottom: 5px solid #06A5A7;
 }
 
-article.page {
-  /* margin-top: 10px;
-	border-top: 5px solid #06A5A7; */
-}
-
 article.page h1 {
   color: #06A5A7;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 .site-footer {

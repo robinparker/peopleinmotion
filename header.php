@@ -18,7 +18,7 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.typekit.net/xue5brv.css">
-	<link href="<?php echo get_template_directory_uri(); ?>/skeleton.css" rel="stylesheet">
+	<link href="<?php echo get_template_directory_uri(); ?>/flexboxgrid.css" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 

@@ -23,7 +23,7 @@ get_header();
 		<section class="intro-text blue-block">
 			<div class="container">
 					<div class="row">
-						<div class="six columns offset-by-three">
+						<div class="col-xs-6 col-xs-offset-3">
 							<?php the_field('intro_text'); ?>
 						</div>
 					</div>
@@ -33,22 +33,42 @@ get_header();
 		<section class="get-involved">
 			<div class="container">
 				<div class="row">
-					<div class="six columns">
+					<div class="col-xs-6">
 						<h2>Get involved</h2>
 					</div>
 				</div>
 					<div class="row">
-						<div class="three columns">
-							<?php the_field('intro_text'); ?>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="gi-block">
+								<a href="<?php the_field('get_involved_block_1_-_link'); ?>">
+									<img src="<?php the_field('get_involved_block_1_-_image'); ?>" role="presentation "/>
+									<?php the_field('get_involved_block_1_-_text'); ?>
+								</a>
+							</div>
 						</div>
-						<div class="three columns">
-							<?php the_field('intro_text'); ?>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="gi-block">
+								<a href="<?php the_field('get_involved_block_2_-_link'); ?>">
+									<img src="<?php the_field('get_involved_block_2_-_image'); ?>" role="presentation "/>
+									<?php the_field('get_involved_block_2_-_text'); ?>
+								</a>
+							</div>
 						</div>
-						<div class="three columns">
-							<?php the_field('intro_text'); ?>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="gi-block">
+								<a href="<?php the_field('get_involved_block_3_-_link'); ?>">
+									<img src="<?php the_field('get_involved_block_3_-_image'); ?>" role="presentation "/>
+									<?php the_field('get_involved_block_3_-_text'); ?>
+								</a>
+							</div>
 						</div>
-						<div class="three columns">
-							<?php the_field('intro_text'); ?>
+						<div class="col-xs-12 col-sm-6 col-md-3">
+							<div class="gi-block">
+								<a href="<?php the_field('get_involved_block_4_-_link'); ?>">
+									<img src="<?php the_field('get_involved_block_4_-_image'); ?>" role="presentation "/>
+									<?php the_field('get_involved_block_4_-_text'); ?>
+								</a>
+							</div>
 						</div>
 					</div>
 			</div>
