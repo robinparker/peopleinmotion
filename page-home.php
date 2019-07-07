@@ -74,6 +74,61 @@ get_header();
 			</div>
 		</section>
 
+
+
+		<section class="blue-block van-count">
+			<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-xs-offset-3">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/van-icon.svg" role="presentation "/>
+							<div class="van-count-text">
+								<p class="van-count-number">over 90</p>
+								<p class="van-count-label">vans of aid to Europe and the Middle East</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+
+
+		<section class="latest-news">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<h2>Latest news</h2>
+					</div>
+				</div>
+					<div class="row">
+
+
+						<?php
+						   // the query
+						   $the_query = new WP_Query( array(
+						      'posts_per_page' => 3
+						   ));
+						?>
+
+						<?php if ( $the_query->have_posts() ) : ?>
+						  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+								<div class="col-xs-12 col-md-4">
+									<div class="news-item">
+								    <?php the_title(); ?>
+								    <?php the_excerpt(); ?>
+									</div>
+								</div>
+						  <?php endwhile; ?>
+						  <?php wp_reset_postdata(); ?>
+
+						<?php else : ?>
+						  <p><?php __('No News'); ?></p>
+						<?php endif; ?>
+
+					</div>
+			</div>
+		</section>
+
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

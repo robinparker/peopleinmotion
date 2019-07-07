@@ -1114,6 +1114,7 @@ object {
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
   overflow: hidden;
   margin-bottom: 2rem;
+  border-radius: 6px;
 }
 
 .gi-block a {
@@ -1122,6 +1123,7 @@ object {
 
 .gi-block a h3 {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #06A5A7;
   margin: .5rem 1rem 1rem 1rem;
   height: 3.5rem;
@@ -1130,6 +1132,32 @@ object {
 .gi-block a p {
   margin: 1rem;
   color: #333;
+}
+
+.van-count {
+  text-align: center;
+}
+
+.van-count-text {
+
+}
+
+.van-count-number {
+  font-family: clarendon-text-pro, serif;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.van-count-label {
+
+}
+
+.news-item {
+  padding: .5rem;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border-radius: 6px;
 }
 
 .site-main.container {
