@@ -75,19 +75,17 @@ get_header();
 		</section>
 
 
+		<section class="blue-block van-count-outer">
 
-		<section class="blue-block van-count">
-			<div class="container">
-					<div class="row">
-						<div class="col-xs-6 col-xs-offset-3">
+						<div class="van-count">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/van-icon.svg" role="presentation "/>
 							<div class="van-count-text">
 								<p class="van-count-number">over 90</p>
-								<p class="van-count-label">vans of aid to Europe and the Middle East</p>
+								<p class="van-count-label">vans of aid to Europe and the Middle East so far</p>
+								<p class="van-count-thanks">with your support... thank you</p>
 							</div>
 						</div>
-					</div>
-			</div>
+
 		</section>
 
 

@@ -1134,22 +1134,38 @@ object {
   color: #333;
 }
 
+.van-count-outer {
+  padding: 4rem 0;
+}
 .van-count {
-  text-align: center;
+  width: 580px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-
+.van-count img {
+  float: left;
+}
 .van-count-text {
-
+  float: left;
+  width: 280px;
+  margin-left: 40px;
 }
-
 .van-count-number {
   font-family: clarendon-text-pro, serif;
   font-weight: bold;
   font-size: 48px;
+  margin-top: 0;
+  margin-bottom: .33em;
+  line-height: 1em;
 }
-
 .van-count-label {
-
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: .33em;
+}
+.van-count-thanks {
+  font-style: italic;
 }
 
 .news-item {
