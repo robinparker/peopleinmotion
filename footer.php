@@ -15,17 +15,11 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'peopleinmotion' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'peopleinmotion' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'peopleinmotion' ), 'peopleinmotion', '<a href="http://underscores.me/">Robin Parker</a>' );
-				?>
+			<p>Registered Charitable Incorporated Organisation in England and Wales. Registered charity number 1167492</p>
+			<ul>
+				<li><a href="http://peopleinmotion.org.uk/our-constitution/">Our constitution</a></li>
+				<li><a href="http://peopleinmotion.org.uk/our-privacy-policy/">Our privacy policy</a></li>
+			</ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

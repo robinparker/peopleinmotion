@@ -685,6 +685,10 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
+.main-navigation .sub-menu li {
+  margin: .5rem 0;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -713,7 +717,7 @@ a:hover, a:active {
     top: 100%;
     left: -999em;
     z-index: 99999;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
   }
 }
 
@@ -1191,8 +1195,33 @@ h2 {
 
 .site-footer {
   background: #444;
-  color: #fff;
+  color: #dbdbdb;
   padding: 20px 0;
+  text-align: center;
+}
+
+.site-footer p {
+  font-size: 14px;
+}
+
+.site-footer ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.site-footer li:last-child {
+  margin-right: 0;
+}
+
+.site-footer a {
+  color: #dbdbdb;
+  font-size: 14px;
 }
 
 @media screen and (min-width: 37.5em) {
