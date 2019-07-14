@@ -23,7 +23,7 @@ get_header();
 		<section class="intro-text blue-block">
 			<div class="container">
 					<div class="row">
-						<div class="col-xs-6 col-xs-offset-3">
+						<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
 							<?php the_field('intro_text'); ?>
 						</div>
 					</div>
@@ -110,8 +110,12 @@ get_header();
 						  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 								<div class="col-xs-12 col-md-4">
 									<div class="news-item">
-								    <?php the_title(); ?>
+										<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+										<h3><?php the_title(); ?></h3>
+										<?php the_post_thumbnail(); ?>
+										<?php the_date('', '<p class="news-item-date">', '</p>'); ?>
 								    <?php the_excerpt(); ?>
+									</a>
 									</div>
 								</div>
 						  <?php endwhile; ?>

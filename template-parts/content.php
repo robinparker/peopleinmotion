@@ -23,13 +23,13 @@
 			<div class="entry-meta">
 				<?php
 				peopleinmotion_posted_on();
-				peopleinmotion_posted_by();
+				// peopleinmotion_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php peopleinmotion_post_thumbnail(); ?>
+
 
 	<div class="entry-content">
 		<?php
@@ -53,7 +53,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php peopleinmotion_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

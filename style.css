@@ -673,8 +673,9 @@ a:hover, a:active {
 .main-navigation a {
   display: block;
   color: #333;
+  font-size: 18px;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 .main-navigation li:last-child a {
@@ -1180,12 +1181,31 @@ object {
   border-radius: 6px;
 }
 
+.news-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.news-item a h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #06A5A7;
+  height: 3em;
+  margin: .5em 0;
+}
+
+.news-item-date {
+  font-size: 14px;
+  color: #767676;
+  margin: 0;
+}
+
 .site-main.container {
   border-top: 5px solid #06A5A7;
   border-bottom: 5px solid #06A5A7;
 }
 
-article.page h1 {
+article.page h1, h1.entry-title {
   color: #06A5A7;
 }
 

@@ -15,4 +15,8 @@ function equalHeights(className) {
   }
 }
 
-equalHeights('gi-block');
+
+window.onload = function() {
+  equalHeights('gi-block');
+  equalHeights('news-item');
+};

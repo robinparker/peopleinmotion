@@ -28,6 +28,7 @@ get_header();
 				endwhile; // End of the loop.
 				?>
 				</div>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
