@@ -11,6 +11,19 @@
 
 ?>
 
+<div class="container">
+	<div class="row externals">
+		<div class="col-xs-12">
+			<a href="http://www.easyfundraising.org.uk/causes/peopleinmotion/?t=Easyfundraising-li&v=a&u=2CYFNA&=" class="easyfundraising" title="easyfundraising.org.uk">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/easyfundraising.png" alt="easyfundraising.org.uk" />
+			</a>
+			<a href="https://www.recycle4charity.co.uk/Register/C75354" class="recycle4charity" title="recycle4charity.co.uk">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/recycle4charity.png" alt="recycle4charity.co.uk" />
+			</a>
+		</div>
+	</div>
+</div>
+
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
