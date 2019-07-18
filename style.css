@@ -631,6 +631,7 @@ a:hover, a:active {
 	float: left;
 	width: 100%;
 } */
+
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -678,6 +679,18 @@ a:hover, a:active {
   margin-right: 1.5rem;
 }
 
+.main-navigation.toggled a {
+  font-size: 20px;
+}
+
+.main-navigation.toggled li, .main-navigation.toggled .sub-menu li {
+  margin-bottom: 1rem;
+}
+
+.main-navigation.toggled .sub-menu {
+  margin-top: 1rem;
+}
+
 .main-navigation li:last-child a {
   margin-right: 0;
 }
@@ -690,6 +703,15 @@ a:hover, a:active {
   margin: .5rem 0;
 }
 
+.main-navigation .header-donate-btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  background: #06A5A7;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -697,12 +719,20 @@ a:hover, a:active {
 }
 
 @media screen and (min-width: 800px) {
+  .main-navigation {
+    position: relative;
+  }
   .menu-toggle {
     display: none;
   }
 
+  .main-navigation {
+    position: relative;
+  }
+
   .main-navigation ul {
     display: block;
+    margin-right: 10rem;
   }
 
   .main-navigation li {
@@ -720,7 +750,23 @@ a:hover, a:active {
     z-index: 99999;
     /* padding-top: 1rem; */
   }
+
+  .main-navigation .header-donate-btn {
+    position: absolute;
+    bottom: -.5rem;
+    right: 0;
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .main-navigation .header-donate-btn {
+    display: none;
+  }
+  .main-navigation.toggled .header-donate-btn {
+    display: inline-block;
+  }
+}
+
 
 button.menu-toggle {
   border: 0;
@@ -761,6 +807,10 @@ button.menu-toggle .bar1, button.menu-toggle .bar2, button.menu-toggle .bar3 {
   z-index: 10;
   background: #fff;
   margin-top: 0;
+  padding: 2rem;
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.33);
+  box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.33);
 }
 
 .site-main .comment-navigation, .site-main .posts-navigation, .site-main .post-navigation {
@@ -1058,8 +1108,8 @@ object {
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
-    padding: 0;
+    /* width: 85%;
+    padding: 0; */
   }
 }
 
@@ -1261,6 +1311,33 @@ h2 {
   font-size: 14px;
 }
 
+.paypal-btns-mob {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.paypal-btns-dtop {
+  display: none;
+}
+
+.paypal-btns-mob form, .paypal-btns-dtop form {
+  margin-bottom: 2rem;
+}
+
+.paypal-btns-dtop select {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
+.paypal-btns-mob select {
+  display: block;
+  margin: auto;
+}
+
+.paypal-btns-mob select + input + input {
+  margin-top: .5rem;
+}
+
 @media screen and (min-width: 37.5em) {
   .site-header {
     height: 120px;
@@ -1274,5 +1351,14 @@ h2 {
   .site-header .main-navigation {
     float: right;
     margin-top: 70px;
+  }
+
+  .paypal-btns-mob {
+    display: none;
+  }
+
+  .paypal-btns-dtop {
+    display: block;
+    padding-top: 7rem;
   }
 }

@@ -45,6 +45,7 @@
 					'menu_id'        => 'primary-menu',
 				) );
 				?>
+				<a href="http://peopleinmotion.org.uk/donate/" class="header-donate-btn">Donate</a>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
