@@ -1194,8 +1194,16 @@ object {
   overflow: hidden;
 }
 .van-count img {
-  float: left;
+  display: none;
 }
+
+@media screen and (min-width: 37.5em) {
+  .van-count img {
+    display: block;
+    float: left;
+  }
+}
+
 .van-count-text {
   float: left;
   width: 280px;
