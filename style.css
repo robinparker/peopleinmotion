@@ -1189,7 +1189,7 @@ object {
   padding: 4rem 0;
 }
 .van-count {
-  width: 580px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1198,6 +1198,9 @@ object {
 }
 
 @media screen and (min-width: 37.5em) {
+  .van-count {
+    width: 580px;
+  }
   .van-count img {
     display: block;
     float: left;
@@ -1246,6 +1249,7 @@ object {
   color: #06A5A7;
   height: 3em;
   margin: .5em 0;
+  font-size: 16px;
 }
 
 .news-item-date {
@@ -1269,7 +1273,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 
@@ -1281,6 +1285,9 @@ h2 {
   }
   h2 {
     font-size: 32px;
+  }
+  .news-item a h3 {
+    font-size: 18px;
   }
 }
 
@@ -1382,4 +1389,38 @@ h2 {
     display: block;
     padding-top: 7rem;
   }
+}
+
+@media screen and (min-width: 37.5em) and (max-width: 1130px) {
+  .site-header .logo {
+    width: 160px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1130px) {
+  .main-navigation a {
+    font-size: 16px;
+    margin-right: 1.25rem;
+  }
+  .site-header .main-navigation {
+    margin-top: 65px;
+  }
+}
+
+.inline-auction-pics img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 37.5em) {
+  .inline-auction-pics img {
+    display: inline-block;
+    max-width: 40%;
+    margin-right: 4%;
+  }
+}
+
+.social img {
+  width: 50px;
+  background: #fff;
 }

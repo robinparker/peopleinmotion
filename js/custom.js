@@ -17,6 +17,11 @@ function equalHeights(className) {
 
 
 window.onload = function() {
-  equalHeights('gi-block');
-  equalHeights('news-item');
+
+  var intViewportWidth = window.innerWidth;
+  if ( intViewportWidth > 768 ) {
+    equalHeights('gi-block');
+    equalHeights('news-item');
+  }
+
 };

@@ -28,6 +28,23 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info container">
+			<ul class="social">
+				<li>
+					<a href="https://www.facebook.com/peopleinmotion15/">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="Facebook logo" />
+					</a>
+				</li>
+				<li>
+					<a href="https://instagram.com/peopleinmotion15/">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="Instagram logo" />
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/People1nMotion?lang=en">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="Twitter logo" />
+					</a>
+				</li>
+			</ul>
 			<p>Registered Charitable Incorporated Organisation in England and Wales. Registered charity number 1167492</p>
 			<ul>
 				<li><a href="http://peopleinmotion.org.uk/our-constitution/">Our constitution</a></li>
