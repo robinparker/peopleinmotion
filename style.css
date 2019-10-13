@@ -728,7 +728,7 @@ a:hover, a:active {
 
   .main-navigation ul {
     display: block;
-    margin-right: 10rem;
+    margin-right: 9rem;
   }
 
   .main-navigation li {
@@ -751,6 +751,7 @@ a:hover, a:active {
     position: absolute;
     bottom: -.5rem;
     right: 0;
+    margin-right: 0;
   }
 }
 
@@ -1102,17 +1103,18 @@ object {
 }
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   .container {
-    /* width: 85%;
-    padding: 0; */
+    width: 90%;
+    padding: 0;
   }
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 1100px) {
   .container {
     width: 80%;
+  padding: 0 20px;
   }
 }
 
@@ -1177,7 +1179,6 @@ object {
   font-weight: 500;
   color: #06A5A7;
   margin: .5rem 1rem 1rem 1rem;
-  height: 3.5rem;
 }
 
 .gi-block a p {
@@ -1198,6 +1199,12 @@ object {
 }
 
 @media screen and (min-width: 37.5em) {
+
+  .gi-block a h3 {
+    height: 3.5rem;
+  }
+
+
   .van-count {
     width: 580px;
   }
@@ -1393,7 +1400,7 @@ h2 {
 
 @media screen and (min-width: 37.5em) and (max-width: 1130px) {
   .site-header .logo {
-    width: 160px;
+    width: 150px;
     height: 90px;
   }
 }
