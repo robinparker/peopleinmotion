@@ -80,7 +80,7 @@ get_header();
 						<div class="van-count">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/van-icon.svg" role="presentation "/>
 							<div class="van-count-text">
-								<p class="van-count-number">over 90</p>
+								<p class="van-count-number">over 100</p>
 								<p class="van-count-label">vans of aid to Europe and the Middle East so far</p>
 								<p class="van-count-thanks">with your support... thank you</p>
 							</div>
